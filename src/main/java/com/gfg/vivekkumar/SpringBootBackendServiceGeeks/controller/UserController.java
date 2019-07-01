@@ -43,7 +43,10 @@ public class UserController {
         userService.deleteUser(id);
         return user;
     }
-
+    @RequestMapping("/")
+    public String hello() {
+        return "Hello World!";
+    }
 
 
 }
